@@ -1,0 +1,140 @@
+*{
+	font-family: 'Comic Sans MS';
+	box-sizing: border-box;
+	margin:0;
+    padding:0;
+    color:white;
+}
+
+html
+{ 
+	background: url("https://www.bio-meals.nl/wp-content/uploads/2018/07/Food-21.jpg") no-repeat center center fixed; 
+	background-size: cover;
+}
+
+.center {
+    
+    padding:5% 5%;
+    width: 700px;
+    display: block;
+    text-align: center;
+    margin:0 auto;
+}
+.roles {
+      font-size: 30px;
+      height: 50px;
+      vertical-align: middle;
+      overflow: hidden;
+} 
+.roles div {
+      height: 50px;
+      transition: margin-top 1s ease-in-out;
+      font-family: 'Cabin Sketch';
+      color:white;
+      font-size: 45px;
+}
+.row{
+    flex:0 0 auto;
+    display: flex;
+    overflow: hidden;
+}
+.box{
+    flex:0 0 70%;
+    margin-left:3%;
+    margin-right: 2%;
+    width:65%;
+    background:rgba(0,0,0,0.5);
+    padding:0 2% 3% 3%;
+    border-radius: 20%;
+}
+.hi{
+    font-family: 'Mansalva';
+    font-size: 45px;
+    text-shadow: 3px 3px rgb(31, 136, 125);
+    margin-bottom: 1%;
+    margin-top: 1%;
+    font-style: italic;
+}
+.about{
+    font-family: 'Mansalva';
+    font-size: 27px;
+    text-shadow: 2px 3px rgb(9, 90, 86);
+    margin-bottom: 2%;
+}
+.about2{
+    font-family: 'Caveat';
+    font-size: 25px;
+    letter-spacing: 1px;
+    margin-bottom: 2%;
+}
+.hobby{
+    font-family: 'Caveat';
+    font-size: 25px;
+    color: turquoise;
+    margin-bottom: 1%;
+}
+.hobbies{
+    font-family: 'Caveat';
+    font-style: italic;
+    margin-left:15%;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    columns: 2;
+    list-style-position: inside;
+}
+.hobbies>li{
+    font-family: 'Caveat';
+    font-style: italic;
+    font-size: 25px;
+}
+.me{
+    border:5px solid rgb(46, 161, 150);
+    border-radius: 50%;
+    width: 320px;
+    height: 320px;
+}
+.profile{
+    flex:0 0 30%;
+    margin-right: 3%;
+}
+.social{
+    font-size:40px;
+    margin:2% 4%;
+    padding:0 0 0 85px;
+}
+.fa{
+    padding: 2%;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+.fa:hover{
+    color:rgb(35, 145, 134);
+}
+@media screen and (max-width:1200px)
+{
+    .row{
+        display: block;
+    }
+    .box{
+        margin:auto;
+    }
+    .profile{
+        margin-left:35%;
+        margin-top: 10px;
+    }
+}
+@media screen and (max-width:1000px){
+    .profile{
+        margin-left:30%;
+        margin-top: 10px;
+    }
+    .center{
+        margin-top: 5%;
+    }
+    .profile{
+        display:block;
+    }
+}
+
+

@@ -1,0 +1,167 @@
+*{
+	font-family: 'Comic Sans MS';
+	box-sizing: border-box;
+	margin:0;
+	padding:0;
+}
+
+html
+{ 
+	background: url("https://pastaandcream.com/wp-content/uploads/2014/05/adobestock_98517357-2048x1367.jpeg") no-repeat center center fixed; 
+	background-size: cover;
+}
+
+body{
+	overflow-x: hidden;
+}
+ul {
+	list-style-type: none;
+}
+
+
+
+.wrapper {
+	
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+}
+
+.calendar {
+	margin: auto;
+	width: 600px;
+	background-color: white;
+	box-shadow: 0px 0px 15px 4px rgba(0, 0, 0, 0.2);
+
+}
+
+.month {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	padding: 10px;
+	text-align: center;
+	background-color: rgb(10, 104, 94);
+	color: white;
+}
+
+.weekdays {
+	background-color: rgb(20, 77, 71);
+	color: white;
+	padding: 7px 0;
+	display: flex;
+}
+
+.days {
+	font-weight: 300;
+	padding: 10px 0;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.weekdays div,
+.days div {
+	text-align: center;
+	width: 14.28%;
+}
+
+.days div {
+	padding: 10px 0;
+	margin-bottom: 10px;
+	transition: all 0.4s;
+}
+
+.prev_date {
+	color: #999;
+}
+
+.today {
+	background-color: #21b19e;
+	color: white;
+}
+
+.days div:hover {
+	cursor: pointer;
+	background-color: #dfe6e9
+}
+
+.prev,
+.next {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	font-size: 23px;
+	background-color: rgba(0, 0, 0, 0.1);
+	transition: all 0.4s;
+}
+
+.prev:hover,
+.next:hover {
+	cursor: pointer;
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+#month {
+	font-size: 30px;
+	font-weight: 500;
+}
+.box-calendar{
+	margin-bottom: 0;
+}
+.map{
+	text-align: center;
+	margin-top:100px;
+	margin-bottom: 10px;
+}
+.map iframe{
+	height:100px;
+}
+
+/*form*/
+input[type=text], select, textarea {
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	resize: vertical;
+	font-family: 'Sofia';
+	font-size: smaller;
+  }
+  
+  input[type=submit] {
+	background-color: rgb(85, 192, 160);
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	font-family: 'Sofia';
+	font-size: large;
+  }
+
+  .sub{
+	  text-align: center;
+  }
+  
+input[type=submit]:hover {
+	background-color: #54dabd;
+  }
+label{
+	font-family: 'Sofia';
+	font-size: large;
+	color:white;
+  }
+  
+  .container-form {
+	width: 40%;
+	background:rgba(0, 0, 0, 0.3);
+	padding: 20px;
+	margin:auto;
+  }

@@ -1,0 +1,216 @@
+*{
+	font-family: 'Comic Sans MS';
+	box-sizing: border-box;
+	margin:0;
+	padding:0;
+	color: black;
+}
+
+html
+{ 
+	background: url("https://www.celebritycruises.com/content/dam/celebrity/eat-and-drink/4250-wine-food-eat-and-drink-overview-80-opacity.jpg") no-repeat center center fixed; 
+	background-size: cover;
+}
+
+.blogs{
+	overflow: hidden;
+}
+.blogs .blogs-content{
+	flex:0 0 100%;
+	max-width:100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.blogs .blogs-content .box-blog{
+	flex:0 0 33.33%;
+	max-width:33.33%;
+	padding:30px;
+}
+.row-blog{
+	margin:2%;
+}
+.content{
+	background:rgba(0,0,0,0.5);
+	padding:3%;
+}
+#first-blog{
+	color:white;
+	font-size:50px;
+	font-family: 'Cabin Sketch';
+	margin:6% 2% 3% 2%;
+}
+.img{
+	overflow: hidden;
+}
+.img img{
+	width:100%;
+	display: block;
+	height: 100%;
+	transition: all 0.5s ease-in;
+}
+.img img:hover{
+	transform: scale(1.1);
+}
+.blogs .blogs-content .box-blog .info span{
+	font-size: 12px;
+	color:white;
+}
+.blogs .blogs-content .box-blog h3{
+	font-family: 'Mansalva';
+	font-size:25px;
+	color:white;
+}
+.blogs .blogs-content .box-blog p{
+	padding:7px 0px;
+	font-size:23px;
+	font-family: 'Caveat';
+	color:white;
+
+}
+.blogs .blogs-content .box-blog a{
+	color:rgb(167, 223, 215);
+	text-decoration: none;
+}
+.blogs .blogs-content .box-blog a:hover{
+	color:rgb(58, 219, 192);
+}
+@media screen and (max-width: 1000px) {
+    .blogs .blogs-content .box-blog{
+		flex:0 0 100%;
+		max-width:100%;
+	}
+}
+
+/*login*/
+/* Full-width input fields */
+input[type=text], input[type=password] {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+	font-family: 'Sofia';
+  }
+
+  .box-cancel{
+	  text-align: center;
+  }
+
+  .login{
+	  text-align:center;
+
+  }
+  .login button{
+	font-family: 'Sofia';
+	font-size: 20px;
+  }
+  
+  /* Set a style for all buttons */
+  button {
+	background-color:rgb(48, 170, 158);
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+  }
+  
+  button:hover {
+	opacity: 0.8;
+  }
+  
+  button[type='submit']{
+	  font-family: 'Sofia';
+	  font-size:20px;
+  }
+  /* Extra styles for the cancel button */
+  .cancelbtn {
+	width: auto;
+	padding: 10px 18px;
+	background-color: #520c0c;
+  }
+  
+ /* Center the image and position the close button */
+  .container-close {
+	text-align: center;
+	position: relative;
+	
+  }
+
+  .container-l {
+	padding: 16px;
+	background-color: black; 
+  }
+  
+  span.psw {
+	float: right;
+	padding-top: 16px;
+  }
+  
+  /* The Modal (background) */
+  .modal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	left: 0;
+	top: 0;
+	width: 30%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+	padding-top: 60px;
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+	background-color: #fefefe;
+	margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+	border: 1px solid #888;
+	width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button (x) */
+  .close {
+	position: absolute;
+	right: 25px;
+	top: 0;
+	color: rgb(255, 255, 255);
+	font-size: 35px;
+	font-weight: bold;
+  }
+  
+  .close:hover, .close:focus {
+	color:  #520c0c;
+	cursor: pointer;
+  }
+  
+  /* Add Zoom Animation */
+  .animate {
+	-webkit-animation: animatezoom 0.6s;
+	animation: animatezoom 0.6s
+  }
+  
+  @-webkit-keyframes animatezoom {
+	from {-webkit-transform: scale(0)} 
+	to {-webkit-transform: scale(1)}
+  }
+	
+  @keyframes animatezoom {
+	from {transform: scale(0)} 
+	to {transform: scale(1)}
+  }
+  
+  /* Change styles for span and cancel button on extra small screens */
+  @media screen and (max-width: 300px) {
+	span.psw {
+	   display: block;
+	   float: none;
+	}
+	.cancelbtn {
+	   width: 100%;
+	}
+  }

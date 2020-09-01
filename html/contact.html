@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>The Blue Cherry • Contact</title>
+	<link rel="icon" type="image/png" sizes="20 x 20" href="favicon.png">
+    <link href="project.css" rel="stylesheet" type="text/css">
+    <link href="contact.css" rel="stylesheet" type="text/css">
+	<link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Cabin Sketch' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Indie Flower' rel='stylesheet'>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+</head>
+
+<body onload="renderDate()">
+	
+	<nav>
+		<div class="logo">The Blue Cherry</div>
+	<ul class="menu">
+		<li><a href="home.html">HOME</a></li>
+		<li><a href="about.html">ABOUT</a></li>
+		<li><a href="projects.html">PROJECTS</a></li>
+		<li><a href="blog.html">BLOG</a></li>
+		<li><a href="contact.html" class="active">CONTACT</a></li>
+	</ul>
+	<div class="burger">
+		<div class="line1"></div>
+		<div class="line2"></div>
+		<div class="line3"></div>
+	</div>
+	</nav>
+
+
+	
+	
+	<div class="map">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2849.6995360561596!2d26.14276164354133!3d44.41881097898179!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1fe9576b31fb3%3A0x5f938242e2582f44!2sBulevardul%20Camil%20Ressu%2C%20Bucure%C8%99ti!5e0!3m2!1sen!2sro!4v1579082146555!5m2!1sen!2sro" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+	</div>
+
+
+		<div class="container-form">
+				<form >
+				  <label for="fname">First Name</label>
+				  <input type="text" id="fname" name="firstname" placeholder="Your name...">
+			  
+				  <label for="lname">Last Name</label>
+				  <input type="text" id="lname" name="lastname" placeholder="Your last name...">
+			  
+				  <label for="event">Event</label>
+				  <select id="event" name="Event">
+					<option value="birthday">Birthday party</option>
+					<option value="company">Company party</option>
+					<option value="wedding">Wedding reception</option>
+					<option value="home">Home delivery</option>
+				  </select>
+			  
+				  <label for="subject">What do you want me to cook?</label>
+				  <textarea id="subject" name="subject" placeholder="Write something..." style="height:100px"></textarea>
+			  
+				  <div class="sub">
+					  <input type="submit" value="Submit">
+				  </div>
+				</form>
+			  </div>
+
+		<div class="box-calendar">
+				<div class="wrapper">
+					<div class="calendar">
+						<div class="month">
+							<div class="prev" onclick="moveDate('prev')">
+								<span>&#10094;</span>
+							</div>
+							<div>
+								<h2 id="month"></h2>
+								<p id="date_str"></p>
+							</div>
+							<div class="next" onclick="moveDate('next')">
+								<span>&#10095;</span>
+							</div>
+						</div>
+						<div class="weekdays">
+							<div>Sun</div>
+							<div>Mon</div>
+							<div>Tue</div>
+							<div>Wed</div>
+							<div>Thu</div>
+							<div>Fri</div>
+							<div>Sat</div>
+						</div>
+						<div class="days">
+			
+						</div>
+					</div>
+				</div>
+				</div>
+	<script>
+        var dt = new Date();
+        function renderDate() {
+            dt.setDate(1);
+            var day = dt.getDay();
+            var today = new Date();
+            var endDate = new Date(
+                dt.getFullYear(),
+                dt.getMonth() + 1,
+                0
+            ).getDate();
+
+            var prevDate = new Date(
+                dt.getFullYear(),
+                dt.getMonth(),
+                0
+            ).getDate();
+            var months = [
+                "January",
+                "February",
+                "March",
+                "April",
+                "May",
+                "June",
+                "July",
+                "August",
+                "September",
+                "October",
+                "November",
+                "December"
+            ]
+            document.getElementById("month").innerHTML = months[dt.getMonth()];
+            document.getElementById("date_str").innerHTML = dt.toDateString();
+            var cells = "";
+            for (x = day; x > 0; x--) {
+                cells += "<div class='prev_date'>" + (prevDate - x + 1) + "</div>";
+            }
+        
+            for (i = 1; i <= endDate; i++) {
+                if (i == today.getDate() && dt.getMonth() == today.getMonth()) cells += "<div class='today'>" + i + "</div>";
+                else
+                    cells += "<div>" + i + "</div>";
+            }
+            document.getElementsByClassName("days")[0].innerHTML = cells;
+
+        }
+
+        function moveDate(para) {
+            if(para == "prev") {
+                dt.setMonth(dt.getMonth() - 1);
+            } else if(para == 'next') {
+                dt.setMonth(dt.getMonth() + 1);
+            }
+            renderDate();
+        }
+	</script>
+	
+	<script src="app.js"></script>	
+	<script src="contact.js"></script>
+	
+
+</body>	
+</html>

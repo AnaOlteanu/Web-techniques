@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>The Blue Cherry • Blog</title>
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon.png">
+    <link href="project.css" rel="stylesheet" type="text/css">
+	<link href="blog.css" rel="stylesheet" type="text/css">
+	<link href='https://fonts.googleapis.com/css?family=Caveat' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Mansalva' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Cabin Sketch' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Indie Flower' rel='stylesheet'>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+	
+	
+	<nav>
+		<div class="logo">The Blue Cherry</div>
+	<ul class="menu">
+		<li><a href="home.html">HOME</a></li>
+		<li><a href="about.html">ABOUT</a></li>
+		<li><a href="projects.html">PROJECTS</a></li>
+		<li><a href="blog.html" class="active">BLOG</a></li>
+		<li><a href="contact.html">CONTACT</a></li>
+	</ul>
+	<div class="burger">
+		<div class="line1"></div>
+		<div class="line2"></div>
+		<div class="line3"></div>
+	</div>
+	</nav>
+
+	<section class="blogs">
+		<div class="container-blog">
+			<div class="row-blog">
+				<div class="section-title text-center">
+					<div id="first-blog">Latest Blogs - Recipe of the day</div>
+				</div>
+			</div>
+			<div class="row-blog">
+				<div class="blogs-content">
+					<div class="box-blog">
+						<div class="img">
+							<img src="food2.jpeg">
+						</div>
+						<div class="content">
+						<div class="info">
+							<span>1 Dec 2019</span>
+						</div>
+						<h3>Pomodori Pasta</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque facilisis ex odio, et varius felis interdum ac. Sed ac maximus quam, quis convallis magna.</p>
+						<a href="">READ MORE</a>
+						</div>
+					</div>
+					<div class="box-blog">
+							<div class="img">
+								<img src="food3.jpeg">
+							</div>
+							<div class="content">
+							<div class="info">
+								<span>5 Dec 2019</span>
+							</div>
+							<h3>Club Sandwich</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque facilisis ex odio, et varius felis interdum ac. Sed ac maximus quam, quis convallis magna.</p>
+							<a href="">READ MORE</a>
+							</div>
+					</div>
+					<div class="box-blog">
+							<div class="img">
+								<img src="food4.jpeg">
+							</div>
+							<div class="content">
+							<div class="info">
+								<span>7 Dec 2019</span>
+							</div>
+							<h3>BBQ Ribs</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque facilisis ex odio, et varius felis interdum ac. Sed ac maximus quam, quis convallis magna.</p>
+							<a href="">READ MORE</a>
+							</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<div class="login">
+		<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+	</div>
+
+	<div id="id01" class="modal">
+	
+	<form class="modal-content animate" action="/action_page.php" method="post">
+		<div class="container-close">
+			<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+		</div>	
+
+		<div class="container-l">
+		<label for="uname"><b>Username</b></label>
+		<input type="text" placeholder="Enter Username" name="uname" required>
+
+		<label for="psw"><b>Password</b></label>
+		<input type="password" placeholder="Enter Password" name="psw" required>
+			
+		<button type="submit">Login</button>
+		
+		</div>
+
+		<div class="container-l">
+
+		<div class="box-cancel">
+			<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+		</div>
+
+		</div>
+	</form>
+	</div>
+
+	
+
+	<script src="app.js"></script>	
+	<script src="blog.js"></script>
+
+</body>	
+</html>
